@@ -42,7 +42,7 @@ contributions in the last year**
 
 # eduardocoura
 <br> 
-:two: cybersecurity <3 and game developer in free time 🎮 <br>
+cybersecurity <3 and game developer in free time 🎮 <br>
 
 
 ## ⚙️ Tecnologias e Ferramentas : 
