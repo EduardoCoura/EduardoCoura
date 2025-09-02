@@ -45,7 +45,7 @@ contributions in the last year**
 cybersecurity <3 and game developer in free time 🎮 <br>
 
 
-## tech : 
+## tech
 > Ferramentas e tecnologias
 
 <table>
