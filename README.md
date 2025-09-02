@@ -40,12 +40,12 @@ contributions in the last year**
 
 </p>
 
-# eduardocoura
+# duduthemonster
 <br> 
 cybersecurity <3 and game developer in free time 🎮 <br>
 
 
-## ⚙️ Tecnologias e Ferramentas : 
+## tech : 
 > Ferramentas e tecnologias
 
 <table>
