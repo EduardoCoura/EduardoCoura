@@ -57,9 +57,3 @@
     <img src="https://img.shields.io/badge/Discord-363636?style=for-the-badge&logo=discord&logoColor=white"/>
   </a>
 </div>
-
-<br/>
-
-<div align="center">
-  <img src="https://i.pinimg.com/originals/9e/1f/27/9e1f27170845a9098952478a576d4952.gif" width="100%"/>
-</div>
