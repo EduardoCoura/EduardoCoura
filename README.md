@@ -84,7 +84,11 @@ cybersecurity <3 and game developer in free time 🎮 <br>
   <samp>Analista de Segurança | FiveM Dev | Estudante de CC</samp>
   <br/><br/>
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Grenze+Gotisch&size=24&pause=1000&color=dcdcdc&center=true&vCenter=true&width=900&lines=Não+é+apenas+sobre+codar,+é+sobre+controlar+o+sistema.;Focado+em+Cybersecurity,+Automação+e+o+submundo+do+GTA+RP." alt="Quote Gothic" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Grenze+Gotisch&size=24&duration=1&pause=100000&color=dcdcdc&center=true&vCenter=true&width=900&lines=Não+é+apenas+sobre+codar,+é+sobre+controlar+o+sistema." alt="Quote Line 1" />
+  
+  <br/>
+
+  <img src="https://readme-typing-svg.herokuapp.com?font=Grenze+Gotisch&size=24&duration=1&pause=100000&color=dcdcdc&center=true&vCenter=true&width=900&lines=Focado+em+Cybersecurity,+Automação+e+o+submundo+do+GTA+RP." alt="Quote Line 2" />
 </div>
 
 <br/>
