@@ -5,7 +5,7 @@
 <br/>
 
 <div align="center">
-  <samp>Analista de Segurança | FiveM Dev | AI Enginer</samp>
+  <samp>Analista de Segurança | CyberSecurity | AI Enginer</samp>
   <br/><br/>
 
   <div align="center">
