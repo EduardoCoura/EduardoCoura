@@ -83,7 +83,7 @@ cybersecurity <3 and game developer in free time 🎮 <br>
 <div align="center">
   <samp>Analista de Segurança | FiveM Dev | Estudante de CC</samp>
   <br/><br/>
-> *"O lobo alpha não precisa provar sua força; sua presença é suficiente"*
+*"O lobo alpha não precisa provar sua força; sua presença é suficiente"*
 
 <div align="center">
   <img src="https://img.shields.io/badge/Lua-000000?style=for-the-badge&logo=lua&logoColor=white" />
