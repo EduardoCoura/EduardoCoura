@@ -76,52 +76,60 @@ cybersecurity <3 and game developer in free time 🎮 <br>
 -->
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=200&section=header&text=Eduardo&fontSize=80&animation=fadeIn&fontAlignY=35&desc=Security%20Analyst%20%7C%20FiveM%20Dev%20%7C%20CS%20Student&descAlignY=60&descAlign=50" width="100%"/>
-</div>
+  <img src="https://i.imgur.com/8Fk1g3P.png" width="100%" alt="Dark Banner Placeholder"/>
+  </div>
 
-### <div align="center">👨‍💻 Sobre Mim</div>
+<h1 align="center">🧑🏻‍💻 to the Duduzera 🧑🏻‍💻</h1>
 
 <div align="center">
   
-  Desenvolvedor e Analista de Segurança, focado em **Cybersecurity**, **Automação** e desenvolvimento de scripts para **FiveM (GTA V)**. 
+  <samp>
+    / Analista de Segurança / / Dev FiveM / AI Engeneer
+  </samp>
+
+  <br/><br/>
+    <p align="center">
+    Focado no submundo do código: <b>Cybersecurity</b>, <b>Automação Pesada</b> e scripts complexos para <b>FiveM</b>.
+    Isso não é apenas código, é estilo de vida.
+    </p>
 
   ---
   
-  🔭 **Atualmente trabalhando em:** Projetos Full-stack e Scripts para servidores de Roleplay (Qbox/ESX)  
-  🌱 **Aprendendo:** Ferramentas avançadas de Pentesting & Otimização de Hardware  
-  🐺 **Interesses:** Cybersecurity,N8N,Fivem
+  ⛓️ **Grind Atual:** Projetos Full-stack e Scripts de alta performance para Roleplay.
+  ⚡ **Focando:** Ferramentas ofensivas de Pentest & Otimização extrema de Hardware.
+  🐺 **Interesses:** Cybersecurity, Metal/Rock, Dark Aesthetics, Gaming.
 
 </div>
 
 <br/>
 
-### <div align="center">🛠️ Tech Stack & Ferramentas</div>
+### <div align="center">⚒️ Arsenal (Tech Stack) ⚒️</div>
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/n8n-FF6584?style=for-the-badge&logo=n8n&logoColor=white" />
+  <img src="https://img.shields.io/badge/Lua-000000?style=for-the-badge&logo=lua&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-222222?style=for-the-badge&logo=javascript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/n8n-222222?style=for-the-badge&logo=n8n&logoColor=white" />
   <br/>
-  <img src="https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
-  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kali_Linux-000000?style=for-the-badge&logo=kalilinux&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-222222?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/MySQL-000000?style=for-the-badge&logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/VS_Code-222222?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
 </div>
 
 <br/>
 
-### <div align="center">⚡ GitHub Stats</div>
+### <div align="center">❄️ GitHub Statistics ❄️</div>
 
 <div align="center">
   <a href="https://github.com/EduardoCoura">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=SEU-USUARIO&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true"/>
-    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SEU-USUARIO&layout=compact&theme=tokyonight"/>
+    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=SEU-USUARIO&show_icons=true&theme=radical&include_all_commits=true&count_private=true&hide_border=true"/>
+    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SEU-USUARIO&layout=compact&theme=radical&hide_border=true&card_width=320"/>
   </a>
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=23F707&center=true&vCenter=true&width=435&lines=Always+learning...;System.out.println(%22Hello+World%22)%3B;sudo+apt-get+update;Building+the+future+of+FiveM;" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=8B0000&center=true&vCenter=true&width=435&lines=Executing+dark+scripts...;System.override(security)%3B;sudo+rm+-rf+%2F;Building+the+underground+of+FiveM;" />
 </div>
