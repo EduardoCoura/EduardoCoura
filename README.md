@@ -82,7 +82,7 @@ cybersecurity <3 and game developer in free time 🎮 <br>
 <br/>
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Metal+Mania&size=45&pause=1000&color=FFFFFF&center=true&vCenter=true&width=600&lines=🐺+Welcome+to+the+Duduzera+profile+🐺" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Creepster&size=48&pause=1000&color=FF0000&center=true&vCenter=true&width=600&lines=🐺+Welcome+to+the+Duduzera+profile+🐺" alt="Typing SVG" />
 </div>
 
 <div align="center">
