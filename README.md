@@ -1,10 +1,4 @@
 <div align="center">
-  <img src="https://i.pinimg.com/originals/af/8d/76/af8d76bb923955e4250284459f0f9c2d.gif" width="100%" style="border-radius: 6px;"/>
-</div>
-
-<br/>
-
-<div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Grenze+Gotisch&size=60&pause=1000&color=FFFFFF&center=true&vCenter=true&width=700&lines=🐺+Welcome+to+the+Duduzera+profile+🐺" alt="Gothic Title" />
 </div>
 
