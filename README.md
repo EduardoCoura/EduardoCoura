@@ -76,9 +76,8 @@ cybersecurity <3 and game developer in free time 🎮 <br>
 -->
 
 <div align="center">
-  <img src="https://i.pinimg.com/originals/50/20/4d/50204d60c6d2d48858485203303673d3.gif" width="100%" style="border-radius: 6px;"/>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Grenze+Gotisch&size=60&pause=1000&color=FFFFFF&center=true&vCenter=true&width=700&lines=🐺+Welcome+to+the+Duduzera+profile+🐺" alt="Gothic Title" />
 </div>
-
 <br/>
 
 <div align="center">
