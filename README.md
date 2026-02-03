@@ -83,23 +83,7 @@ cybersecurity <3 and game developer in free time 🎮 <br>
 <div align="center">
   <samp>Analista de Segurança | FiveM Dev | Estudante de CC</samp>
   <br/><br/>
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Grenze+Gotisch&size=24&duration=1&pause=100000&color=dcdcdc&center=true&vCenter=true&width=900&lines=Não+é+apenas+sobre+codar,+é+sobre+controlar+o+sistema." alt="Quote Line 1" />
-  
-  <br/>
-
-  <img src="https://readme-typing-svg.herokuapp.com?font=Grenze+Gotisch&size=24&duration=1&pause=100000&color=dcdcdc&center=true&vCenter=true&width=900&lines=Focado+em+Cybersecurity,+Automação+e+o+submundo+do+GTA+RP." alt="Quote Line 2" />
-</div>
-
-<br/>
-
-<div align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExODg4MzY4bmF4Z3EyeHp4aG43Z3EyeHp4aG43Z3EyeHp4aG43Z3EyeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/LwH79u9Z083hN5l2y8/giphy.gif" width="100%" height="40px"/>
-</div>
-
-<br/>
-
-### <div align="center">Tech Stack 🤯</div>
+> *"O lobo alpha não precisa provar sua força; sua presença é suficiente"*
 
 <div align="center">
   <img src="https://img.shields.io/badge/Lua-000000?style=for-the-badge&logo=lua&logoColor=white" />
