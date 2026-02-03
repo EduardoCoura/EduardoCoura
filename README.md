@@ -76,60 +76,56 @@ cybersecurity <3 and game developer in free time 🎮 <br>
 -->
 
 <div align="center">
-  <img src="https://i.imgur.com/8Fk1g3P.png" width="100%" alt="Dark Banner Placeholder"/>
-  </div>
-
-<h1 align="center">🧑🏻‍💻 to the Duduzera 🧑🏻‍💻</h1>
-
-<div align="center">
-  
-  <samp>
-    / Analista de Segurança / / Dev FiveM / AI Engeneer
-  </samp>
-
-  <br/><br/>
-    <p align="center">
-    Focado no submundo do código: <b>Cybersecurity</b>, <b>Automação Pesada</b> e scripts complexos para <b>FiveM</b>.
-    Isso não é apenas código, é estilo de vida.
-    </p>
-
-  ---
-  
-  ⛓️ **Grind Atual:** Projetos Full-stack e Scripts de alta performance para Roleplay.
-  ⚡ **Focando:** Ferramentas ofensivas de Pentest & Otimização extrema de Hardware.
-  🐺 **Interesses:** Cybersecurity, Metal/Rock, Dark Aesthetics, Gaming.
-
+  <img src="https://i.pinimg.com/originals/50/20/4d/50204d60c6d2d48858485203303673d3.gif" width="100%" style="border-radius: 6px;"/>
 </div>
 
 <br/>
 
-### <div align="center">⚒️ Arsenal (Tech Stack) ⚒️</div>
+<h1 align="center">🐺 Welcome to the Duduzera profile 🐺</h1>
+
+<div align="center">
+  <samp>Analista de Segurança | FiveM Dev | Estudante de CC</samp>
+  <br/><br/>
+  <p align="center">
+    "Não é apenas sobre codar, é sobre controlar o sistema."<br/>
+    Focado em <b>Cybersecurity</b>, <b>Automação</b> e o submundo do <b>GTA RP</b>.
+  </p>
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExODg4MzY4bmF4Z3EyeHp4aG43Z3EyeHp4aG43Z3EyeHp4aG43Z3EyeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/LwH79u9Z083hN5l2y8/giphy.gif" width="100%" height="40px"/>
+</div>
+
+<br/>
+
+### <div align="center">Tech Stack 🤯</div>
 
 <div align="center">
   <img src="https://img.shields.io/badge/Lua-000000?style=for-the-badge&logo=lua&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-222222?style=for-the-badge&logo=javascript&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/n8n-222222?style=for-the-badge&logo=n8n&logoColor=white" />
-  <br/>
+  <img src="https://img.shields.io/badge/JavaScript-111111?style=for-the-badge&logo=javascript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-222222?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Kali_Linux-000000?style=for-the-badge&logo=kalilinux&logoColor=white" />
-  <img src="https://img.shields.io/badge/Git-222222?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/MySQL-000000?style=for-the-badge&logo=mysql&logoColor=white" />
-  <img src="https://img.shields.io/badge/VS_Code-222222?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
+  <br/>
+  <img src="https://img.shields.io/badge/Git-111111?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/MySQL-222222?style=for-the-badge&logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/VS_Code-000000?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
 </div>
 
 <br/>
 
-### <div align="center">❄️ GitHub Statistics ❄️</div>
+### <div align="center">🩸 Estatísticas</div>
 
 <div align="center">
   <a href="https://github.com/EduardoCoura">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=SEU-USUARIO&show_icons=true&theme=radical&include_all_commits=true&count_private=true&hide_border=true"/>
-    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SEU-USUARIO&layout=compact&theme=radical&hide_border=true&card_width=320"/>
+    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=SEU-USUARIO&show_icons=true&theme=radical&include_all_commits=true&count_private=true&hide_border=true&bg_color=000000"/>
+    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SEU-USUARIO&layout=compact&theme=radical&hide_border=true&bg_color=000000"/>
   </a>
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=8B0000&center=true&vCenter=true&width=435&lines=Executing+dark+scripts...;System.override(security)%3B;sudo+rm+-rf+%2F;Building+the+underground+of+FiveM;" />
+  <img src="https://i.pinimg.com/originals/9e/1f/27/9e1f27170845a9098952478a576d4952.gif" width="100%"/>
 </div>
