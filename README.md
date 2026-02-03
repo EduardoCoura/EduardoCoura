@@ -81,7 +81,9 @@ cybersecurity <3 and game developer in free time 🎮 <br>
 
 <br/>
 
-<h1 align="center">🐺 Welcome to the Duduzera profile 🐺</h1>
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Metal+Mania&size=45&pause=1000&color=FFFFFF&center=true&vCenter=true&width=600&lines=🐺+Welcome+to+the+Duduzera+profile+🐺" alt="Typing SVG" />
+</div>
 
 <div align="center">
   <samp>Analista de Segurança | FiveM Dev | Estudante de CC</samp>
