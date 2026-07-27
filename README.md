@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Grenze+Gotisch&size=60&pause=1000&color=FFFFFF&center=true&vCenter=true&width=700&lines=🐺+Welcome+to+the+Duduzera+profile+🐺" alt="Gothic Title" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Grenze+Gotisch&size=60&pause=1000&color=FFFFFF&center=true&vCenter=true&width=700&lines=🐺+Welcome+to+the+3du+profile+🐺" alt="Gothic Title" />
 </div>
 
 <br/>
