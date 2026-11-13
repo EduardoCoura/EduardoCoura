@@ -1,0 +1,83 @@
+name: profile
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - '.github/workflows/profile.yml'
+  issues:
+    types: [opened, labeled]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: profile-${{ github.event_name == 'issues' && github.event.issue.number || 'render' }}
+  cancel-in-progress: false
+
+jobs:
+  welcome:
+    if: github.event.action == 'opened' && contains(github.event.issue.labels.*.name, 'testimonial')
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE: ${{ github.event.issue.number }}
+          AUTHOR: ${{ github.event.issue.user.login }}
+        run: gh issue comment "$ISSUE" --repo "$GITHUB_REPOSITORY" --body "Valeu, @${AUTHOR}! Seu depoimento e o seu carro vão aparecer no perfil assim que @${GITHUB_REPOSITORY_OWNER} aprovar (adicionando a label \`approved\`)."
+
+  generate:
+    if: >-
+      github.event_name != 'issues' ||
+      (github.event.action == 'labeled' && github.event.label.name == 'approved' &&
+       github.event.sender.login == github.repository_owner &&
+       contains(github.event.issue.labels.*.name, 'testimonial'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Publish approved testimonial
+        if: github.event_name == 'issues'
+        env:
+          AUTHOR: ${{ github.event.issue.user.login }}
+          BODY: ${{ github.event.issue.body }}
+          ISSUE: ${{ github.event.issue.number }}
+        run: |
+          node scripts/approve.mjs
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/testimonials.json README.md
+          git commit -m "chore: publish testimonial from @${AUTHOR}"
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 3; done
+
+      - name: Generate cards
+        run: node scripts/generate.mjs
+        env:
+          GH_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
+          PROFILE_LOGIN: ${{ github.repository_owner }}
+          BILLBOARD_HIDE: ${{ vars.BILLBOARD_HIDE }}
+          DISCORD_ID: ${{ vars.DISCORD_ID }}
+
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Close testimonial issue
+        if: github.event.action == 'labeled'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE: ${{ github.event.issue.number }}
+        run: gh issue close "$ISSUE" --repo "$GITHUB_REPOSITORY" --comment "Publicado! Já está ao vivo no perfil e seu carro entrou na cidade."

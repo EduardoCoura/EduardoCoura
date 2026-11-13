@@ -1,0 +1,13 @@
+name: Depoimento (Testimonial)
+description: Deixe um depoimento no meu perfil. Ele aparece na cidade após eu aprovar.
+title: "testimonial"
+labels: ["testimonial"]
+body:
+  - type: textarea
+    id: message
+    attributes:
+      label: Message
+      description: Até 240 caracteres. Seu avatar e @ aparecem ao lado, e seu carro começa a rodar pela cidade.
+      placeholder: Como foi trabalhar ou programar comigo?
+    validations:
+      required: true

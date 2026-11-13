@@ -1,14 +1,17 @@
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Grenze+Gotisch&size=60&pause=1000&color=FFFFFF&center=true&vCenter=true&width=700&lines=🐺+Welcome+to+the+3du+profile+🐺" alt="Gothic Title" />
-</div>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EduardoCoura/EduardoCoura/output/city-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/EduardoCoura/EduardoCoura/output/city-light.svg" /><img alt="Eduardo Coura. A living isometric city built from the last year of GitHub activity, one building per day, with a live status, the latest commit on a billboard and a car for every friend who left a testimonial." src="https://raw.githubusercontent.com/EduardoCoura/EduardoCoura/output/city-light.svg" width="100%" /></picture>
+
+<p align="center">
+  <a href="https://github.com/EduardoCoura/EduardoCoura/issues/new?template=testimonial.yml"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EduardoCoura/EduardoCoura/output/link-testimonial-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/EduardoCoura/EduardoCoura/output/link-testimonial-light.svg" /><img alt="leave a testimonial" src="https://raw.githubusercontent.com/EduardoCoura/EduardoCoura/output/link-testimonial-light.svg" /></picture></a>
+</p>
+
+<!-- testimonials:start -->
+<!-- testimonials:end -->
 
 <br/>
 
 <div align="center">
   <samp>Analista de Segurança | CyberSecurity | AI Engineer</samp>
   <br/><br/>
-
-  <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=EB+Garamond&weight=400i&size=24&duration=1&pause=100000&color=dcdcdc&center=true&vCenter=true&width=800&height=50&lines=%22IESUS+SALVAT,+FRATER+✞%22" alt="Latin Quote Italic" />
 </div>
 
@@ -18,6 +21,7 @@
   <img src="https://img.shields.io/badge/Lua-363636?style=for-the-badge&logo=lua&logoColor=white" />
   <img src="https://img.shields.io/badge/JavaScript-363636?style=for-the-badge&logo=javascript&logoColor=white" />
   <img src="https://img.shields.io/badge/Python-363636?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kotlin-363636?style=for-the-badge&logo=kotlin&logoColor=white" />
   <img src="https://img.shields.io/badge/Kali_Linux-363636?style=for-the-badge&logo=kalilinux&logoColor=white" />
   <br/>
   <img src="https://img.shields.io/badge/Git-363636?style=for-the-badge&logo=git&logoColor=white" />
@@ -39,21 +43,4 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Grenze+Gotisch&size=24&duration=1&pause=100000&color=808080&center=true&vCenter=true&width=800&height=40&lines=mas+poucos+sabem+o+que+você+realmente+é." alt="Maquiavel Line 2" />
   <br/>
   <img src="https://readme-typing-svg.herokuapp.com?font=Grenze+Gotisch&size=20&duration=1&pause=100000&color=505050&center=true&vCenter=true&width=800&height=40&lines=-+Nicolau+Maquiavel" alt="Maquiavel Line 3" />
-</div>
-
-<br/>
-
-<div align="center">
-  <a href="LINK-DO-GMAIL">
-    <img src="https://img.shields.io/badge/Gmail-363636?style=for-the-badge&logo=gmail&logoColor=white"/>
-  </a>
-  <a href="LINK-DO-LINKEDIN">
-    <img src="https://img.shields.io/badge/LinkedIn-363636?style=for-the-badge&logo=linkedin&logoColor=white"/>
-  </a>
-  <a href="LINK-DO-INSTA">
-    <img src="https://img.shields.io/badge/Instagram-363636?style=for-the-badge&logo=instagram&logoColor=white"/>
-  </a>
-  <a href="LINK-DO-DISCORD">
-    <img src="https://img.shields.io/badge/Discord-363636?style=for-the-badge&logo=discord&logoColor=white"/>
-  </a>
 </div>
