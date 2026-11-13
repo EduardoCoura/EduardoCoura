@@ -23,18 +23,18 @@ const STATUS = {
 
 const THEMES = {
   dark: {
-    bg: "#0a0a0a",
-    border: "#27272a",
-    text: "#fafafa",
-    muted: "#a1a1aa",
-    accent: "#34d399",
+    bg: "#0d1117",
+    border: "#30363d",
+    text: "#f0f6fc",
+    muted: "#8b949e",
+    accent: "#a371f7",
   },
   light: {
     bg: "#ffffff",
-    border: "#e4e4e7",
-    text: "#09090b",
-    muted: "#71717a",
-    accent: "#059669",
+    border: "#d0d7de",
+    text: "#1f2328",
+    muted: "#656d76",
+    accent: "#8250df",
   },
 };
 
