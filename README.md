@@ -19,9 +19,9 @@
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=ts%2Cjs%2Cpy%2Ckotlin%2Creact%2Cnextjs%2Celectron%2Cgit%2Cvscode&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://skillicons.dev/icons?i=ts%2Cjs%2Cpy%2Ckotlin%2Creact%2Cnextjs%2Celectron%2Cgit%2Cvscode&theme=light" />
-    <img src="https://skillicons.dev/icons?i=ts%2Cjs%2Cpy%2Ckotlin%2Creact%2Cnextjs%2Celectron%2Cgit%2Cvscode&theme=dark" alt="TypeScript, JavaScript, Python, Kotlin, React, Next.js, Electron, Git, VS Code" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EduardoCoura/EduardoCoura/main/assets/stacks-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/EduardoCoura/EduardoCoura/main/assets/stacks-light.svg" />
+    <img src="https://raw.githubusercontent.com/EduardoCoura/EduardoCoura/main/assets/stacks-dark.svg" alt="TypeScript, JavaScript, Python, Kotlin, React, Next.js, Electron, Git, VS Code, Twine" />
   </picture>
 </div>
 
