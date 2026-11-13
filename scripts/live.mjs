@@ -41,23 +41,66 @@ export async function latestCommit(login, token) {
     if (!res.ok) throw new Error(`${path}: ${res.status}`);
     return res.json();
   };
+  const ghOptional = (path) => gh(path).catch(() => null);
+  const lowerLogin = login.toLowerCase();
+  const isHidden = (fullName) => HIDDEN_REPOS.some((h) => fullName === h || fullName.startsWith(`${h}/`));
+  const isProfileRepo = (fullName) => fullName.toLowerCase() === `${lowerLogin}/${lowerLogin}`;
+  const matchesAuthor = (c, ownerLogin) =>
+    c?.author?.login?.toLowerCase() === lowerLogin ||
+    c?.committer?.login?.toLowerCase() === lowerLogin ||
+    (!c?.author?.login && ownerLogin?.toLowerCase() === lowerLogin);
+  const toBillboard = (repoName, c) => {
+    const date = c?.commit?.author?.date ?? c?.commit?.committer?.date;
+    return {
+      repo: repoName,
+      message: String(c.commit.message || "").split(/\r?\n/)[0],
+      ago: ago(date),
+      ts: new Date(date).getTime() || 0,
+    };
+  };
+
   try {
-    const events = await gh(`users/${login}/events/public?per_page=50`);
-    for (const e of events) {
-      if (e.type !== "PushEvent" || !e.payload?.head) continue;
-      if (HIDDEN_REPOS.some((h) => e.repo.name === h || e.repo.name.startsWith(`${h}/`))) continue;
-      const c = await gh(`repos/${e.repo.name}/commits/${e.payload.head}`);
-      if (c.author?.login !== login) continue;
-      return { repo: e.repo.name.split("/")[1], message: c.commit.message.split("\n")[0], ago: ago(c.commit.author.date) };
-    }
-    const repos = await gh(`users/${login}/repos?sort=pushed&direction=desc&per_page=6`);
-    for (const r of repos) {
-      if (r.fork) continue;
-      if (HIDDEN_REPOS.some((h) => r.full_name === h || r.full_name.startsWith(`${h}/`))) continue;
-      const commits = await gh(`repos/${r.full_name}/commits?per_page=5`);
-      const c = commits.find((x) => x.author?.login === login || (!x.author?.login && r.owner?.login === login));
-      if (!c) continue;
-      return { repo: r.name, message: c.commit.message.split("\n")[0], ago: ago(c.commit.author.date) };
+    const [eventsRes, reposRes] = await Promise.all([
+      ghOptional(`users/${login}/events/public?per_page=50`),
+      ghOptional(`users/${login}/repos?sort=pushed&direction=desc&per_page=10`),
+    ]);
+    const events = Array.isArray(eventsRes) ? eventsRes : [];
+    const repos = Array.isArray(reposRes) ? reposRes : [];
+
+    const pickFromEvents = async (allowProfileRepo) => {
+      for (const e of events) {
+        if (e.type !== "PushEvent" || !e.payload?.head) continue;
+        if (isHidden(e.repo.name)) continue;
+        if (!allowProfileRepo && isProfileRepo(e.repo.name)) continue;
+        const c = await ghOptional(`repos/${e.repo.name}/commits/${e.payload.head}`);
+        if (!c || !matchesAuthor(c, e.repo.name.split("/")[0])) continue;
+        return toBillboard(e.repo.name.split("/")[1], c);
+      }
+      return null;
+    };
+
+    const pickFromRepos = async (allowProfileRepo, minTs = 0) => {
+      for (const r of repos) {
+        if (r.fork) continue;
+        if (isHidden(r.full_name)) continue;
+        if (!allowProfileRepo && isProfileRepo(r.full_name)) continue;
+        if (minTs && new Date(r.pushed_at).getTime() <= minTs) break;
+        const commits = await ghOptional(`repos/${r.full_name}/commits?per_page=5`);
+        if (!Array.isArray(commits)) continue;
+        const c = commits.find((x) => matchesAuthor(x, r.owner?.login));
+        if (!c) continue;
+        return toBillboard(r.name, c);
+      }
+      return null;
+    };
+
+    // Prefer real project repositories over the profile repo itself (`login/login`)
+    // so editing the profile README/city scripts does not replace the active project billboard.
+    for (const allowProfileRepo of [false, true]) {
+      const fromEvent = await pickFromEvents(allowProfileRepo);
+      const fromRepo = await pickFromRepos(allowProfileRepo, fromEvent?.ts ?? 0);
+      const best = fromRepo && (!fromEvent || fromRepo.ts >= fromEvent.ts) ? fromRepo : fromEvent;
+      if (best) return { repo: best.repo, message: best.message, ago: best.ago };
     }
   } catch (err) {
     console.warn(`billboard skipped: ${err.message}`);
