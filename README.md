@@ -21,7 +21,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/EduardoCoura/EduardoCoura/main/assets/stacks-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/EduardoCoura/EduardoCoura/main/assets/stacks-light.svg" />
-    <img src="https://raw.githubusercontent.com/EduardoCoura/EduardoCoura/main/assets/stacks-dark.svg" alt="TypeScript, JavaScript, Python, Kotlin, React, Next.js, Electron, Git, VS Code, Twine" />
+    <img src="https://raw.githubusercontent.com/EduardoCoura/EduardoCoura/main/assets/stacks-dark.svg" alt="TypeScript, JavaScript, Python, Kotlin, Rust, React, Next.js, Electron, Git, VS Code, Twine" />
   </picture>
 </div>
 

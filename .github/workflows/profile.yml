@@ -2,7 +2,7 @@ name: profile
 
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '7,22,37,52 * * * *'
   push:
     branches: [main]
     paths:
@@ -10,6 +10,8 @@ on:
       - '.github/workflows/profile.yml'
   issues:
     types: [opened, labeled]
+  repository_dispatch:
+    types: [repo-updated, update-profile]
   workflow_dispatch:
 
 permissions:
