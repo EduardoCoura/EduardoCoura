@@ -1,0 +1,11 @@
+name = "eduardocoura-profile-watcher"
+main = "src/index.ts"
+compatibility_date = "2026-01-01"
+
+[triggers]
+crons = ["*/5 * * * *"]
+
+[vars]
+PROFILE_LOGIN = "EduardoCoura"
+PROFILE_REPO = "EduardoCoura/EduardoCoura"
+TIMEZONE = "America/Sao_Paulo"
