@@ -2,12 +2,9 @@ name: profile
 
 on:
   schedule:
-    - cron: '7,22,37,52 * * * *'
+    - cron: '13,43 * * * *'
   push:
     branches: [main]
-    paths:
-      - 'scripts/**'
-      - '.github/workflows/profile.yml'
   issues:
     types: [opened, labeled]
   repository_dispatch:
@@ -42,11 +39,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
-          node-version: 22
+          node-version: 24
 
       - name: Publish approved testimonial
         if: github.event_name == 'issues'
@@ -70,7 +67,7 @@ jobs:
           BILLBOARD_HIDE: ${{ vars.BILLBOARD_HIDE }}
           DISCORD_ID: ${{ vars.DISCORD_ID }}
 
-      - uses: crazy-max/ghaction-github-pages@v4
+      - uses: crazy-max/ghaction-github-pages@v5
         with:
           target_branch: output
           build_dir: dist

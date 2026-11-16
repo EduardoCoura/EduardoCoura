@@ -219,4 +219,4 @@ for (const theme of Object.keys(THEMES)) {
   for (const [i, t] of testimonials.entries()) await writeFile(`${OUT}/testimonial-${i}-${theme}.svg`, testimonial(theme, t, faces[i]));
   for (const [id, label] of BUTTONS) await writeFile(`${OUT}/link-${id}-${theme}.svg`, button(theme, label, id === "testimonial"));
 }
-console.log(`${LOGIN}: ${stats.total} contributions · ${live.mode} · ${live.status} · ${testimonials.length} testimonials · billboard: ${commit ? `${commit.repo} "${commit.message}"` : "none"}`);
+console.log(`${LOGIN}: ${stats.total} contributions · ${live.mode} · ${live.status} · ${testimonials.length} testimonials · billboard: ${commit ? `${commit.kind ?? "latest commit"}: ${commit.repo} "${commit.message}"` : "none"}`);

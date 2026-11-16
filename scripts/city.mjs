@@ -250,9 +250,24 @@ export function cityScene(mode, weeks, box, live = {}) {
   const latest = cells.filter((c) => c.n).at(-1);
   defs.push(`<linearGradient id="live" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="${C.accent}" stop-opacity=".7"/><stop offset="1" stop-color="${C.accent}" stop-opacity="0"/></linearGradient>`);
 
+  const fitSub = (kind, repo, ago, maxChars = 36) => {
+    const full = `${kind} · ${repo} · ${ago}`;
+    if (full.length <= maxChars) return full;
+    const shortKind = kind === "latest commit" ? "commit" : kind;
+    const shorter = `${shortKind} · ${repo} · ${ago}`;
+    if (shorter.length <= maxChars) return shorter;
+    const budget = Math.max(6, maxChars - shortKind.length - ago.length - 6);
+    const trimmedRepo = repo.length > budget ? `${repo.slice(0, budget - 1)}…` : repo;
+    return `${shortKind} · ${trimmedRepo} · ${ago}`;
+  };
+
   const billboard = (commit) => {
     const { x0, x1, z, y0, y1 } = BOARD;
     const frame = C.night ? "#1f2937" : "#cbd5e1";
+    const kind = commit.kind ?? "latest commit";
+    const subText = fitSub(kind, commit.repo, commit.ago);
+    const facePts = [[x0 + 0.2, y0 + 0.12, z], [x1 - 0.2, y0 + 0.12, z], [x1 - 0.2, y1 - 0.12, z], [x0 + 0.2, y1 - 0.12, z]];
+    defs.push(`<clipPath id="bb-face"><polygon points="${facePts.map(pt).join(" ")}"/></clipPath>`);
     let out = "";
     for (const px of [x0 + 1.4, x1 - 1.4]) out += box3(px, LIFT, z - 0.2, px + 0.18, y0, z - 0.02, frame, shade(frame, 0.8), shade(frame, 0.6));
     out += box3(x0 - 0.12, y0 - 0.12, z - 0.22, x1 + 0.12, y1 + 0.12, z, frame, frame, shade(frame, 0.7));
@@ -260,16 +275,16 @@ export function cityScene(mode, weeks, box, live = {}) {
     out += poly(C.accent, [[x0, y1 - 0.08, z], [x1, y1 - 0.08, z], [x1, y1, z], [x0, y1, z]]);
     const [sx, sy] = S(x0, y1, z);
     const lines = wrap(commit.message, 28, 2);
-    out += `<g transform="matrix(${(EX[0] * k).toFixed(3)} ${(EX[1] * k).toFixed(3)} 0 ${k.toFixed(3)} ${f(sx)} ${f(sy)})">`;
-    out += `<text x="0.45" y="0.8" class="bb-sub">latest commit · ${esc(commit.repo)} · ${esc(commit.ago)}</text>`;
+    out += `<g clip-path="url(#bb-face)"><g transform="matrix(${(EX[0] * k).toFixed(3)} ${(EX[1] * k).toFixed(3)} 0 ${k.toFixed(3)} ${f(sx)} ${f(sy)})">`;
+    out += `<text x="0.45" y="0.8" class="bb-sub">${esc(subText)}</text>`;
     lines.forEach((l, i) => (out += `<text x="0.45" y="${(1.75 + i * 0.86).toFixed(2)}" class="bb-msg">${esc(l)}</text>`));
-    out += `</g>`;
+    out += `</g></g>`;
     if (C.night)
       for (const px of [x0 + 2, (x0 + x1) / 2, x1 - 2]) {
         const [gx, gy] = S(px, y1 - 0.9, z);
         out += `<ellipse cx="${f(gx)}" cy="${f(gy)}" rx="${f(k * 1.3)}" ry="${f(k * 1.1)}" fill="url(#glow)" opacity=".35"/>`;
       }
-    return `<g class="fade-in"><title>Latest commit: ${esc(commit.repo)} — ${esc(commit.message)}</title>${out}</g>`;
+    return `<g class="fade-in"><title>${esc(kind)}: ${esc(commit.repo)} — ${esc(commit.message)}</title>${out}</g>`;
   };
 
   const lot = (c) => (c.n ? building(c) : tree(c.X + 0.5, c.Z + 0.55, 0.3, rand() * 3));
