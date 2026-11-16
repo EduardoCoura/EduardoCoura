@@ -38,7 +38,8 @@ function ago(date, now = Date.now()) {
 
 const isBot = (name) => Boolean(name && (name.endsWith("[bot]") || name === "github-actions[bot]"));
 
-export async function latestCommit(login, token) {
+export async function latestCommit(login, rawToken) {
+  const token = rawToken?.trim();
   const gh = async (path) => {
     const headers = { Accept: "application/vnd.github+json" };
     if (token) headers.Authorization = `bearer ${token}`;

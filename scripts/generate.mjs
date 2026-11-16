@@ -4,7 +4,7 @@ import { DISCORD_ID, latestCommit, presence, sceneMode, visitors } from "./live.
 import { load, SHOWN } from "./testimonial.mjs";
 
 const LOGIN = process.env.PROFILE_LOGIN ?? "EduardoCoura";
-const TOKEN = process.env.GH_TOKEN ?? process.env.GITHUB_TOKEN;
+const TOKEN = (process.env.GH_TOKEN ?? process.env.GITHUB_TOKEN)?.trim();
 const OUT = process.env.OUT_DIR ?? "dist";
 
 /** Buttons rendered under the banner, as [file id, label]. */

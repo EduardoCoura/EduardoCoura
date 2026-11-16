@@ -87,7 +87,7 @@ async function verifySignature(secret: string, body: string, signatureHeader: st
 }
 
 export async function checkAndSync(env: Env, nowTs = Date.now()): Promise<{ action: string; reason?: string }> {
-  const token = env.GH_TOKEN ?? "";
+  const token = (env.GH_TOKEN ?? "").trim();
   const login = env.PROFILE_LOGIN ?? "EduardoCoura";
   const repo = env.PROFILE_REPO ?? `${login}/${login}`;
   const timeZone = env.TIMEZONE ?? "America/Sao_Paulo";
@@ -220,7 +220,7 @@ export default {
     }
 
     if (request.method === "POST" && url.pathname === "/webhook") {
-      const token = env.GH_TOKEN ?? "";
+      const token = (env.GH_TOKEN ?? "").trim();
       const login = env.PROFILE_LOGIN ?? "EduardoCoura";
       const repo = env.PROFILE_REPO ?? `${login}/${login}`;
       if (!token) return Response.json({ ok: false, error: "GH_TOKEN not configured" }, { status: 500 });
