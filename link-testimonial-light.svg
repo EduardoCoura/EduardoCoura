@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="38" viewBox="0 0 192 38" role="img" aria-label="leave a testimonial">
+<rect x="0.5" y="0.5" width="191" height="37" rx="10" fill="#8250df" stroke="#8250df"/>
+<circle cx="17" cy="19" r="3" fill="#ffffff"/>
+<style>text { font: 600 13px ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace; fill: #ffffff; }</style>
+<text x="27" y="23.5">leave a testimonial</text>
+</svg>
